@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "nemod:block/test_block"
+    }
+  }
+}

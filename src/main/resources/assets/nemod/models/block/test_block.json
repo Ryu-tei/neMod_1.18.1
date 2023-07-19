@@ -1,0 +1,45 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"particle": "mushi_texture.png",
+		"0":"mushi_texture"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [90, 90, 0],
+			"translation": [0, -1.5, 2]
+		}
+	},
+			"groups": [
+				{
+					"name": "body",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-6, 0, -4], "size": [12, 4, 8], "uv": [0, 0]},"0",
+						{"origin": [-4, 4, -4], "size": [8, 2, 8], "uv": [0, 12]},"0"
+					]
+				},
+				{
+					"name": "Bone2",
+					"parent": "body",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-1, 8, 0], "size": [1, 3, 1], "pivot": [0, 0, 0], "rotation": [0, 135, -70], "uv": [0, 33]},"0",
+						{"origin": [-2, 4, 0], "size": [2, 4, 2], "pivot": [0, 0, 0], "rotation": [0, -45, 75], "uv": [0, 2]},"0",
+						{"origin": [-1, 8, 0], "size": [1, 2, 1], "pivot": [0, 0, 0], "rotation": [180, -135, -110], "uv": [0, 34]},"0",
+						{"origin": [-1, 8, 0], "size": [1, 3, 1], "pivot": [0, 0, 0], "rotation": [180, -135, -140], "uv": [0, 33]},"0",
+						{"origin": [0, 4, -2], "size": [2, 4, 2], "pivot": [0, 0, 0], "rotation": [0, 135, 45], "uv": [0, 2]},"0"
+					]
+				},
+				{
+					"name": "bone",
+					"parent": "Bone2",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [0, 5, -2], "size": [2, 4, 2], "pivot": [0, 0, 0], "rotation": [0, 135, -20], "uv": [0, 2]},"0",
+						{"origin": [-0.7, 9, -0.3], "size": [1, 4, 1], "pivot": [0, 0, 0], "rotation": [0, -45, -27.5], "uv": [0, 32]},"0"
+					]
+				}
+			]
+		}
