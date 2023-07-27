@@ -19,13 +19,13 @@ public class ClientEventSubscriber {
     @SubscribeEvent
     public static void onRegisterEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
         // EntityTaihouEntityのレンダラーを登録
-        event.registerEntityRenderer(ModEntities.ENTITY_TAIHOU_ENTITY, EntityTaihouEntityRenderer.RenderFactory::new);
+        event.registerEntityRenderer(ModEntities.ENTITY_TAIHOU_ENTITY, new RenderFactory());
     }
 
     // EntityTaihouEntityRenderer内にRenderFactoryクラスを作成して、EntityRendererProviderに渡すようにする
     public static class RenderFactory implements EntityRendererProvider<EntityTaihouEntity> {
-        public RenderFactory(EntityRendererProvider.Context context) {
-            // コンストラクタ内でレンダラーを初期化
+        public RenderFactory() {
+            // コンストラクタは空でOK
         }
 
         @Override
