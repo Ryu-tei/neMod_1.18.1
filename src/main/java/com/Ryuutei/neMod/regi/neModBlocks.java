@@ -25,7 +25,7 @@ public class neModBlocks {
         public static void registerBlocks(final RegistryEvent.Register<Block> event) {
             final Block[] blocks = {
                     new BlockneModBlock(),
-                    new BlocktestBlock()
+                    new BlocktestBlock(),
             };
             event.getRegistry().registerAll(blocks);
         }
