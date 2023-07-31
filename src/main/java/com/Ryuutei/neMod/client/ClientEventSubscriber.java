@@ -25,7 +25,7 @@ public class ClientEventSubscriber {
     // EntityTaihouEntityRenderer内にRenderFactoryクラスを作成して、EntityRendererProviderに渡すようにする
     public static class RenderFactory implements EntityRendererProvider<EntityTaihouEntity> {
         public RenderFactory() {
-            // コンストラクタは空でOK
+            /*コンストラクタは空でOK*/
         }
 
         @Override
